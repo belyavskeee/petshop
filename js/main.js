@@ -47,6 +47,11 @@ $('.close-popup-bg').click(function(e) {
     $('html').removeClass('no-scroll');
 });
 
+$('.buy').click(function(e) {
+    e.preventDefault();
+    window.location.href = 'pay.html';
+});
+
 //работа 8
 $(document).ready(function() {
   $('.baton').click(function(e) {
@@ -80,96 +85,6 @@ $(document).ready(function() {
 });
 
 
-$('.update').click(function(e) {
-  e.preventDefault();
-  $('h3').fadeOut(800);
-  $('li:odd').addClass('grey_text');
-});
-
-$(document).ready(function(){   
-    // создаем действия при клике на кнопку
-    var animateTest = function() {
-        var widthElement = parseInt($('.kvadrat').width());
-        var heightElement = parseInt($('.kvadrat').height());
-        var stepZoom = 50;
-        var speedAnimate = 1000;
-        // запуск анимации
-        $(this).animate(
-            // анимация
-            {
-                width: (widthElement + stepZoom) + 'px',
-                height: (heightElement + stepZoom) + 'px'
-            }, 
-            // скорость анимации
-            speedAnimate,                   
-        );
-    }
-     
-    //  задаем действия для кнопки
-    $('.kvadrat').bind('click', animateTest);
-});
-
-
-
-// $( "#controlgroup" ).controlgroup();
-
-// $( "#tabs" ).tabs();
-
-// $( "#dialog" ).dialog({
-//     autoOpen: false,
-//     width: 400,
-//     buttons: [
-//         {
-//             text: "Ok",
-//             click: function() {
-//                 $( this ).dialog( "close" );
-//             }
-//         },
-//         {
-//             text: "Cancel",
-//             click: function() {
-//                 $( this ).dialog( "close" );
-//             }
-//         }
-//     ]
-// });
-
-// // Link to open the dialog
-// $( "#dialog-link" ).click(function( event ) {
-//     $( "#dialog" ).dialog( "open" );
-//     event.preventDefault();
-// });
-
-// $( "#datepicker" ).datepicker({
-//     inline: true
-// });
-
-// $( "#slider" ).slider({
-//     range: true,
-//     values: [ 17, 67 ]
-// });
-
-// $( "#progressbar" ).progressbar({
-//     value: 20
-// });
-
-// $( "#spinner" ).spinner();
-
-// $( "#menu" ).menu();
-
-// $( "#tooltip" ).tooltip();
-
-// $( "#selectmenu" ).selectmenu();
-
-// // Hover states on the static widgets
-// $( "#dialog-link, #icons li" ).hover(
-//     function() {
-//         $( this ).addClass( "ui-state-hover" );
-//     },
-//     function() {
-//         $( this ).removeClass( "ui-state-hover" );
-//     }
-// );
 
 
 new Swiper('.swiper', {
