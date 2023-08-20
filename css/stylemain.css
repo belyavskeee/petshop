@@ -18,6 +18,7 @@ html, body {
 
 .topnav_menu {
 	margin-top: 10px;
+	margin-bottom: 10px;
 	align-items: right;
 }
 
@@ -195,7 +196,7 @@ html, body {
 .add_email input {
 	border: none;
 	width: 200px;
-	padding: 4px 0;
+	padding: 4.5px 0;
 	box-shadow: 0 0 5px #474747;
 	margin: 0px;
 }
@@ -208,6 +209,8 @@ html, body {
 }
 
 .add_email button {
+	top: -1px;
+    position: relative;
 	padding: 6.3px 0;
 	width: 100px;
 	border: none;
@@ -225,7 +228,7 @@ html, body {
 }
 
 .social {
-	margin: 40px 0 0 0;
+	margin: 40px 0 50px 0;
 }
 
 .social p {
@@ -694,4 +697,13 @@ html, body {
 .reiting p {
 	margin: 7px;
 	font-size: 16px;
+}
+
+.block_index_2 {
+	max-width: 100%;
+	overflow: hidden;
+}
+
+.col-md-5 {
+	overflow: hidden;
 }
