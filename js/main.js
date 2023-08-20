@@ -52,6 +52,11 @@ $('.buy').click(function(e) {
     window.location.href = 'pay.html';
 });
 
+$('.update').click(function(e) {
+  e.preventDefault();
+  $('li:odd').addClass('grey_text');
+});
+
 //работа 8
 $(document).ready(function() {
   $('.baton').click(function(e) {
@@ -82,26 +87,4 @@ $(document).ready(function() {
       $('#address').after('<p class="error">Адрес не может быть менее 8 символов</p>');
     }
   });
-});
-
-
-
-
-new Swiper('.swiper', {
-    //стрелки
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-
-    pagination: {
-        el: '.swiper-pagination', // "String with CSS selector or HTML element of the container with pagination" - цитата из документации, обратие внимание
-        clickable: true,
-        },
-    autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-        },
-
-    spacebetween: 90,
 });
